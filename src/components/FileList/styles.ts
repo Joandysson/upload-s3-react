@@ -1,3 +1,4 @@
+import { MdLink } from "react-icons/md";
 import styled from "styled-components";
 
 export const Container = styled.ul`
@@ -9,7 +10,7 @@ export const Container = styled.ul`
     margin-top: 10px;
     display: flex;
     flex: 1;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: #444;
     min-width: 150px;
@@ -29,9 +30,18 @@ export const FileInfo = styled.div`
   flex-direction: column;
   align-items: center;
 
+  a {
+    width: 100%
+  }
+
   div {
     display: flex;
     flex-direction: column;
+
+    strong {
+      display: flex;
+      align-items: center;
+    }
 
     span {
       font-size: 12px;
@@ -61,4 +71,25 @@ export const Preview = styled.div<PreviewProps>`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    width:100% !important;
+    height:100%;
+  }
+
+  div:hover {
+    background-color: #ffffff90
+  }
 `;
+
+
+export const MdLinkStyle = styled(MdLink)`
+  opacity: 0;
+  position: absolute;
+  ${Preview}:hover & {
+    opacity: 1;
+  }
+`
