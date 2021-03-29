@@ -32,8 +32,9 @@ const FileList: FC<FileListProps> = ({ files, onDelete }) => (
               rel="noopener noreferrer"
             >
               <Preview src={uploadedFile.preview} >
-                <div></div>
-                <MdLinkStyle size={35} color="#222" />
+                <div>
+                  <MdLinkStyle size={35} color="#222" />
+                </div>
               </Preview>
             </a>
             <div>

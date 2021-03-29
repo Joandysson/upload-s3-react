@@ -71,11 +71,11 @@ export const Preview = styled.div<PreviewProps>`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width:100% !important;
     height:100%;
   }
@@ -88,7 +88,6 @@ export const Preview = styled.div<PreviewProps>`
 
 export const MdLinkStyle = styled(MdLink)`
   opacity: 0;
-  position: absolute;
   ${Preview}:hover & {
     opacity: 1;
   }
