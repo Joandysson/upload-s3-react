@@ -5,7 +5,7 @@
 - - -
 ## Sobre ##
 ### Objetivo
-Desenvolver um front-end que consulma a API do projeto `git@github.com:Joandysson/upload-s3-react.git`
+Desenvolver um front-end que consuma a API do projeto `git@github.com:Joandysson/upload-s3-react.git`
 
 ### Projeto
 
